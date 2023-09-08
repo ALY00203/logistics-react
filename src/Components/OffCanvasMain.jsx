@@ -61,10 +61,17 @@ function OffCanvasMain() {
                 <div className="location fs-1 text-white text-center fw-bold">
                   <p>{data.name}</p>
                 </div>
-                <div className="temp fw-bold  text-white display-3">
-                  <h1>{Math.round(kelvinToCelsius(data.main?.temp))} °C</h1>
-                  <p>{Math.round(kelvinToFahrenheit(data.main?.temp))} °F</p>
-                </div>
+                <div className="temp fw-bold text-white display-3">
+  {data.main && typeof data.main.temp === 'number' ? (
+    <>
+      <h1>{Math.round(kelvinToCelsius(data.main.temp))} °C</h1>
+      <p>{Math.round(kelvinToFahrenheit(data.main.temp))} °F</p>
+    </>
+  ) : (
+    <p>Loading...</p>
+  )}
+</div>
+
                 <div className="descriptions text-white">
                   <p>{data.weather?.[0]?.main}</p>
                 </div>

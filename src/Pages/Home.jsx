@@ -34,7 +34,7 @@ function Home() {
   return (
     <>
     <Slider />
-    <div className=' container d-flex'>
+    <div className=' container d-flex gap-1'>
       <div className='w-50 h-50 text-start mt-5 p-5 ' data-aos="fade-right" data-aos-duration="4000">
     <p className='fs-2'>We Offer You</p>
     <h1 className='display-3 fw-bold text-start '>Full range of transportation services</h1>
