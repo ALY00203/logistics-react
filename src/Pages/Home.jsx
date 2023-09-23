@@ -34,26 +34,29 @@ function Home() {
   return (
     <>
     <Slider />
-    <div className=' container d-flex gap-1'>
-      <div className='w-50 h-50 text-start mt-5 p-5 ' data-aos="fade-right" data-aos-duration="4000">
-    <p className='fs-2'>We Offer You</p>
-    <h1 className='display-3 fw-bold text-start '>Full range of transportation services</h1>
-    <p className='fs-3'> We do our best to implement your ideas into the project to make it successful and profitable. </p>
-    <div className='d-flex gap-3'>
-    <img
+    <div className='container'>
+  <div className='row'>
+    <div className='col-lg-6 mt-5 p-5' data-aos="fade-right" data-aos-duration="4000">
+      <p className='fs-2'>We Offer You</p>
+      <h1 className='display-3 fw-bold text-start'>Full range of transportation services</h1>
+      <p className='fs-3'>We do our best to implement your ideas into the project to make it successful and profitable.</p>
+      <div className='d-flex gap-3'>
+        <img
           className="d-block rounded-5 imgCeo"
           src={CEO}
-          alt="First slide"
-        />    
-    <p className=' d-flex justify-content-center align-items-center '>CEO Director</p>
+          alt="CEO"
+        />
+        <p className='d-flex justify-content-center align-items-center'>CEO Director</p>
+      </div>
     </div>
+    <div className='col-lg-6 mt-5 p-5 fs-5' data-aos="fade-left" data-aos-duration="4000">
+      <p className='first'>Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <p>Consectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor ut labore sed adipiscing  do eiusm od tempor ut sed do eiusm.</p>
+    </div>
+  </div>
 </div>
-      <div className='h-100 w-50 text-start mt-5 p-5 fs-5 d-flex flex-column justify-content-center gap-3 ' data-aos="fade-left" data-aos-duration="4000">
-        <p className='first'>Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        <p>Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <p>Consectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor ut labore sed adipiscing  do eiusm od tempor ut sed do eiusm.</p>
-</div>
-</div>
+
  <Cards />
  <WhatWeDo />
  <SliderOpinion reviews={reviews}/>

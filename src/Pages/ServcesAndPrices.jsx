@@ -48,21 +48,20 @@ function ServcesAndPrices() {
 
 
   return (
-    <>
-    <div className='w-100 text-center pt-3'>
-    <p className='display-3 fw-bold '>Pricing And Plans</p>
-  <div className='fw-bold p-5'><ArrowDown size={32} /></div>  
+<>
+  <div className='w-100 text-center pt-3'>
+    <p className='display-3 fw-bold'>Pricing And Plans</p>
+    <div className='fw-bold p-5'><ArrowDown size={32} /></div>
   </div>
-  <div className=' fluid'>
-    <h2 className='p-3 fw-bold'>We Offer You</h2>
+  <div className='container-fluid'>
+    <h2 className='p-3 fw-bold text-center'>We Offer You</h2>
     <video src={vid} className='w-100' loop muted autoPlay></video>
-
   </div>
-    <div className='container d-flex w-100 justify-content-center'>
+  <div className='container d-flex justify-content-center'>
     <Row xs={1} md={3} className="g-4 m-3">
       {services.map((service, idx) => (
         <Col key={idx}>
-          <Card className=" card h-100 shadow-lg p-4 ">
+          <Card className="card h-100 shadow-lg p-4">
             <Card.Body>
               <Card.Title className='text-center fs-3 fw-bold'>{service.title}</Card.Title>
               <Card.Text className='text-center'>
@@ -81,10 +80,10 @@ function ServcesAndPrices() {
         </Col>
       ))}
     </Row>
-    </div>
-    <Payment show={showModal} onHide={handleCloseModal} />
+  </div>
+  <Payment show={showModal} onHide={handleCloseModal} />
+</>
 
-    </>
   );
 }
 

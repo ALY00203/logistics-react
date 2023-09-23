@@ -113,11 +113,11 @@ transition: all 0.5s ease;
   left: 0px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .button-52 {
     padding: 13px 50px 13px;
   }
-}
+} */
 
 .fixed-bg{
     background-image: url("./images/download1.jpg");
@@ -140,6 +140,11 @@ transition: all 0.5s ease;
   position: absolute;
   top: -75px;
 }
+/* @media (max-width:991px){
+  .cardFly{
+    display: none;
+  } */
+
 .line-1{
   width: 75%;
   background-color: #af1a1a;
@@ -308,4 +313,5 @@ bottom: 0%;
   background-size: cover;
   height: 100%;
 }
+
 

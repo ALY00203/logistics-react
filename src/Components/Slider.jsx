@@ -10,46 +10,45 @@ import { Link } from 'react-router-dom';
 
 function Slider() {
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 h-100"
-          src={image2}
-          alt="First slide"
-        />
-        <Carousel.Caption className=' h-75 d-flex flex-column justify-content-center align-items-center'>
-          <p className='fw-bold'> INTERNATIONAL LOGISTIC </p>
-          <h1 className='display-2 fw-bold text-uppercase'>Full Sustainable Cargo Solution</h1>
-          <Button as={Link} to={'About'} variant="outline-warning">Who We Are</Button>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 h-100"
-          src={image1}
-          alt="Second slide"
-        />
-        <Carousel.Caption className=' h-100 d-flex flex-column justify-content-center align-items-center'>
-          <h1 className='display-2 fw-bold'>WE DELVER AROUND WORLD</h1>
-          <p className='fw-bold'>international delivery </p>
-          <Button as={Link} to={'About'} variant="outline-warning">Who We Are</Button>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item >
-        <img
-          className="d-block h-100"
-          src={image3}
-          alt="Third slide"
-        />
+<Carousel fade>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={image2}
+      alt="First slide"
+    />
+    <Carousel.Caption className='d-none d-md-block'>
+      <p className='fw-bold'>INTERNATIONAL LOGISTIC</p>
+      <h1 className='display-2 fw-bold text-uppercase'>Full Sustainable Cargo Solution</h1>
+      <Button as={Link} to={'About'} variant="outline-warning">Who We Are</Button>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={image1}
+      alt="Second slide"
+    />
+    <Carousel.Caption className='d-none d-md-block'>
+      <h1 className='display-2 fw-bold'>WE DELIVER AROUND WORLD</h1>
+      <p className='fw-bold'>international delivery</p>
+      <Button as={Link} to={'About'} variant="outline-warning">Who We Are</Button>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={image3}
+      alt="Third slide"
+    />
+    <Carousel.Caption className='d-none d-md-block'>
+      <h1 className='display-2 fw-bold'>INTERNATIONAL FREIGHT DELIVERY SERVICES</h1>
+      <p className='fw-bold'>We Provide Solutions</p>
+      <Button as={Link} to={'About'} variant="outline-warning">Who We Are</Button>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
 
-        <Carousel.Caption className=' h-100 d-flex flex-column justify-content-center align-items-center'>
-          <h1 className='display-2 fw-bold'>INTERNATIONAL FREIGHT DELIVERY SERVICES</h1>
-          <p className='fw-bold'> We Provide Solutions </p>
-          <Button as={Link} to={'About'} variant="outline-warning">Who We Are</Button>
-
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
   );
 }
 

@@ -16,22 +16,21 @@ const SliderOpinion = ({ reviews }) => {
 
   return (
     <>
-    <h1 className="d-flex text-center justify-content-center w-100  pt-3 mt-4 fw-bold">Our Clients Review</h1>
-    <Slider {...settings} className="mb-5">
-      {reviews.map((review, index) => (
-        <div key={index} className="client-review-slide w-100 d-flex flex-column align-self-center">
-          <div className="text-center">
-            <div className="d-flex justify-content-center w-100 ">
-          <img className="d-flex align-self-center w-5 rounded-pill" src={review.clientImage} alt="" />
-            </div>
-          <h3 className="fw-bold">{review.clientName}</h3>
-          <div className="d-flex w-100 justify-content-center">
-          <p className="w-75  fs-5 fw-bold">{review.comment}</p>
-          </div>
-          </div>
+<h1 className="text-center pt-3 mt-4 fw-bold">Our Clients Review</h1>
+<Slider {...settings} className="mb-5">
+  {reviews.map((review, index) => (
+    <div key={index} className="client-review-slide">
+      <div className="text-center">
+        <div className="d-flex justify-content-center">
+          <img className="img-fluid rounded-pill" src={review.clientImage} alt="" />
         </div>
-      ))}
-    </Slider>
+        <h3 className="fw-bold">{review.clientName}</h3>
+        <p className="fs-5 fw-bold">{review.comment}</p>
+      </div>
+    </div>
+  ))}
+</Slider>
+
     </>
   );
 };
